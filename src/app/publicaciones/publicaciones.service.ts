@@ -10,9 +10,5 @@ export class PublicacionesService {
   lista_publicaciones()
   {
     return this.http.get("https://jsonplaceholder.typicode.com/posts");
-  }
-  lista_usuarios()
-  {
-    return this.http.get("http://localhost:82/VETERINARIAPROYECTO/index.php/api/usuarios/getlistausuarios2");
-  }
+  }  
 }

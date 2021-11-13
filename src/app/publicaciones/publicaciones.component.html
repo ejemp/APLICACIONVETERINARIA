@@ -1,27 +1,22 @@
-<p>publicaciones works!</p>
+<p>publicaciones works!!!</p>
 <h1>Lista datos</h1>
-<h3 *ngIf="cargando">cargando...</h3>
 <table class="table">
-  <thead>
-      <tr>
-          <th>ID</th>
-          <th>NOMBRE</th>
-          <th>PRECIO</th>
-          <th>CANTIDAD</th>
-          <th>SUB-TOTAL</th>           
-          <th>ACCIONES</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr *ngFor="let prod of datos; let i = index ">
-          <td>{{i + 1}}</td>
-          <td>{{prod.numero_doc}}</td>
-          <td>{{prod.nombres}}</td>
-          <td>{{prod.primer_apellido}}</td>
-          <td>{{prod.segundo_apellido}}</td>
-          
-          <td>              
-          </td>
-      </tr>
-  </tbody>
-</table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>VALOR1</th>
+            <th>VALOR2</th>
+            <th>VALOR3</th>
+            <th>VALOR4</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dat of datos; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{dat.userId}}</td>
+            <td>{{dat.id}}</td>            
+            <td>{{dat.title}}</td>
+            <td>{{dat.body}}</td>
+        </tr>
+    </tbody>
+</table>    

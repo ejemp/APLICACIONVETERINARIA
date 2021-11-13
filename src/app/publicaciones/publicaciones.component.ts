@@ -11,18 +11,16 @@ export class PublicacionesComponent implements OnInit {
   datos:any = [];
   constructor(protected publicaciones: PublicacionesService) 
   {
-    this.cargando = true;
-    this.publicaciones.lista_usuarios().subscribe(
+    this.publicaciones.lista_publicaciones().subscribe(
       (res:any) => {
-        console.log(res);
-        this.datos = res.datos;
+        console.log(res);        
+        this.datos = res;
       },
       (error:any)=>{
-        console.log(error);
-        
+        console.log(error);        
       }
     );
-   }
+  }
 
   
   ngOnInit(): void {
